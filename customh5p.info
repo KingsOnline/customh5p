@@ -1,0 +1,5 @@
+name = H5P custom
+description = Adds custom code to h5p elements.
+package = My Modules
+dependencies[] = h5p
+core = 7.x
