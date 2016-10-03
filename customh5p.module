@@ -16,6 +16,6 @@ function customh5p_h5p_styles_alter(&$styles, $libraries, $mode) {
     $styles[] = (object) array(
       // Path relative to drupal root
       'path' => drupal_get_path('module', 'customh5p') . '/h5p-overrides.css',
-      // Cache buster
+      'version' => '?ver=1',
     );
 }
