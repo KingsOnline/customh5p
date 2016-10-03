@@ -2,7 +2,7 @@
 <?php
 // Add subscript and superscript buttons to the text and advanced text editors.
 function customh5p_h5p_semantics_alter(&$semantics, $machine_name, $major_version, $minor_version) {
-  if ($machine_name == 'H5P.Text' && $major_version == 1) {
+  if ($machine_name == 'H5P.Text') {
     $semantics[0]->tags[] = 'sub';
     $semantics[0]->tags[] = 'sup';
   }
