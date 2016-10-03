@@ -1,0 +1,21 @@
+
+<?php
+// Add subscript and superscript buttons to the text and advanced text editors.
+function customh5p_h5p_semantics_alter(&$semantics, $machine_name, $major_version, $minor_version) {
+  if ($machine_name == 'H5P.Text' && $major_version == 1) {
+    $semantics[0]->tags[] = 'sub';
+    $semantics[0]->tags[] = 'sup';
+  }
+  if ($machine_name == 'H5P.AdvancedText') {
+    $semantics[0]->tags[] = 'sub';
+    $semantics[0]->tags[] = 'sup';
+  }
+}
+// Embed a stylesheet into all h5p objects.
+function customh5p_h5p_styles_alter(&$styles, $libraries, $mode) {
+    $styles[] = (object) array(
+      // Path relative to drupal root
+      'path' => drupal_get_path('module', 'customh5p') . '/h5p-overrides.css',
+      // Cache buster
+    );
+}
