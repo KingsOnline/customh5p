@@ -19,3 +19,12 @@ function customh5p_h5p_styles_alter(&$styles, $libraries, $mode) {
       'version' => '?ver=1',
     );
 }
+// Add Google Analytics tracking to xAPI-enabled objects. 
+function customh5p_h5p_scripts_alter(&$scripts, $libraries, $mode) {
+  $scripts[] = (object) array(
+    // Path relative to drupal root
+    'path' => drupal_get_path('module', 'customh5p') . '/h5p-ga.js',
+    // Cache buster
+    'version' => '?ver=0.0.1',
+  );
+}
