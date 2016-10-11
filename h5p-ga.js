@@ -4,7 +4,7 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 // Replace tracking code with the appropriate one for your course.
-  ga('create', 'UA-85477958-1', 'auto');
+  ga('create', 'REPLACE ME', 'auto');
   ga('send', 'pageview');
 
 (function () {
