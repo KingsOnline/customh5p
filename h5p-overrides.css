@@ -66,3 +66,9 @@
 .h5p-course-presentation .h5p-progressbar {
         background: #c1c1c1;
 }
+/*Show solution*/
+h5p-solution-icon {	
+	border: 0.1em solid #cee0f4;
+    color: #1a4473;
+    background: #cee0f4;
+}
