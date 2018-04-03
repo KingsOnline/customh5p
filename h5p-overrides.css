@@ -66,16 +66,4 @@
 .h5p-course-presentation .h5p-progressbar {
         background: #c1c1c1;
 }
-/*Show solution*/
-.h5p-multichoice .h5p-solution-icon {
-    font-family: icomoon-multichoice;
-    position: absolute;
-    text-align: left;
-    right: -0.25em;
-    margin-right: 5px;
-    line-height: 1em;
-    top: 0.585em;
-    width: 13em;
-    height: 1em;
-    overflow: hidden;
-}
+
