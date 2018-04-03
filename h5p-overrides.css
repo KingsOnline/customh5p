@@ -67,8 +67,15 @@
         background: #c1c1c1;
 }
 /*Show solution*/
-h5p-solution-icon {	
-	border: 0.1em solid #cee0f4;
-    color: #1a4473;
-    background: #cee0f4;
+.h5p-multichoice .h5p-solution-icon {
+    font-family: icomoon-multichoice;
+    position: absolute;
+    text-align: left;
+    right: -0.25em;
+    margin-right: 5px;
+    line-height: 1em;
+    top: 0.585em;
+    width: 13em;
+    height: 1em;
+    overflow: hidden;
 }
